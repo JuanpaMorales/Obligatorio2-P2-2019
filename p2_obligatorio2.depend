@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1574926865 source:/home/ansina/Desktop/p2_obligatorio2/main.cpp
+	<stdio.h>
+
+1575249667 source:/home/ansina/Desktop/Obligatorio2-P2-2019/Fecha.cpp
+	"Fecha.h"
+
+1575249644 /home/ansina/Desktop/Obligatorio2-P2-2019/Fecha.h
+	<stdio.h>
+
+1575251960 source:/home/ansina/Desktop/Obligatorio2-P2-2019/Cliente.cpp
+	"Cliente.h"
+
+1574432921 /home/ansina/Desktop/Obligatorio2-P2-2019/Cliente.h
+	"string.h"
+
+1575251878 /home/ansina/Desktop/Obligatorio2-P2-2019/string.h
+	<stdio.h>
+
+1575248411 source:/home/ansina/Desktop/Obligatorio2-P2-2019/AbbClientes.cpp
+	"AbbClientes.h"
+
+1575251821 /home/ansina/Desktop/Obligatorio2-P2-2019/AbbClientes.h
+	"Cliente.h"
+
+1575251762 source:/home/ansina/Desktop/Obligatorio2-P2-2019/main.cpp
+	"AbbClientes.h"
+	"ListaReclamos.h"
+
+1575247645 /home/ansina/Desktop/Obligatorio2-P2-2019/ListaReclamos.h
+	"Reclamo.h"
+
+1574432890 /home/ansina/Desktop/Obligatorio2-P2-2019/Reclamo.h
+	"string.h"
+	"Fecha.h"
+
+1575251892 source:/home/ansina/Desktop/Obligatorio2-P2-2019/string.cpp
+	"string.h"
+	<stdio_ext.h>
+
+1575248474 source:/home/ansina/Desktop/Obligatorio2-P2-2019/ListaReclamos.cpp
+	"ListaReclamos.h"
+
+1575248443 source:/home/ansina/Desktop/Obligatorio2-P2-2019/Reclamo.cpp
+	"Reclamo.h"
+
