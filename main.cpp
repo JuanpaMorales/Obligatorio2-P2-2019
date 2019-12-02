@@ -20,7 +20,6 @@ int main(){
 
     }
 
-    printf("\nCI mas reclamos: %i", ciMasReclamador(lis) );
 
 
 

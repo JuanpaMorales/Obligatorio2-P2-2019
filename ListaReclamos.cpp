@@ -93,4 +93,33 @@ int ciMasReclamador(ListaReclamos lis){
     return ciMax;
 }
 
+int ReclamosEnRango(ListaReclamos lis, Fecha desde, Fecha hasta){
+    Fecha recFecha;
+    int cantidad = 0;
+
+    while(lis!=NULL){
+        recFecha = ObtenerFecha(lis->info);
+        if(mayorOigual(recFecha, desde) && mayorOigual(hasta, recFecha))
+            cantidad++;
+        lis = lis->sig;
+    }
+
+    return cantidad;
+}
+
+void ListarReclamos_ci(ListaReclamos lis, int ci){
+    while(lis!=NULL){
+        if(ObtenerCI(lis->info) == ci)
+            MostrarReclamo(lis->info);
+        lis = lis->sig;
+    }
+}
+
+void ListarReclamos_fecha(ListaReclamos lis, Fecha f){
+    while(lis!=NULL){
+        if( sonIguales(ObtenerFecha(lis->info), f) )
+            MostrarReclamo(lis->info);
+        lis = lis->sig;
+    }
+}
 

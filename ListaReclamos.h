@@ -35,15 +35,14 @@ int TotalRecNOSolucionados(ListaReclamos lis);
 int CantidadRecPorCI(ListaReclamos lis, int ci);
 /// Precondición: !esVacia()
 int ciMasReclamador(ListaReclamos lis);
-
-//-----------------------------------------------------------------------------------
-
 /// Precondición: ambas fechas validas y desde <= hasta
 int ReclamosEnRango(ListaReclamos lis, Fecha desde, Fecha hasta);
 /// Precondición: ClienteRegistrado()
 void ListarReclamos_ci(ListaReclamos lis, int ci);
 /// Precondición: facha valida
 void ListarReclamos_fecha(ListaReclamos lis, Fecha f);
+
+
 
 
 
