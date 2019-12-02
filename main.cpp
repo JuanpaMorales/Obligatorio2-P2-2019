@@ -4,8 +4,8 @@
 
 
 int main(){
-    Cliente c;
-    CargarCliente(c);
-    MostrarCliente(c);
+    Reclamo r;
+    CargarReclamo(r, 1);
+    MostrarReclamo(r);
 
 }

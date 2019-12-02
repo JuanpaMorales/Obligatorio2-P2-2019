@@ -12,7 +12,7 @@ typedef struct{
     bool resuelto;
 } Reclamo;
 
-void CargarReclamo(Reclamo &r);
+void CargarReclamo(Reclamo &r, int numero);
 void MostrarReclamo(Reclamo r);
 int ObtenerNum(Reclamo r);
 Fecha ObtenerFecha(Reclamo r);

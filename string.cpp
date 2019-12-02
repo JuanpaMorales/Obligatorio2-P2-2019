@@ -35,6 +35,7 @@ void scan(string & s) {
     string aux = new char[MAX];
     int i = 0;
     char c;
+    fflush(stdin);
     scanf("%c", & c);
     while (c != '\n' && i < MAX - 1) {
     aux[i]
