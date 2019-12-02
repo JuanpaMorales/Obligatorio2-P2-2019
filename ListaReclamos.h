@@ -19,12 +19,17 @@ Reclamo Primero(ListaReclamos lis);
 void Resto(ListaReclamos & lis);
 void InsFront(ListaReclamos & lis, Reclamo e);
 
+/// Precondición: ClienteRegistrado && (esVacia(lis) || mayorOigual(fecha reclamo, fecha ultimo cargado) ) && validarFecha(reclamo)
+void AltaReclamo(ListaReclamos & lis, Reclamo e);
 bool ReclamoExiste(ListaReclamos lis, int num);
+int ProximoNum(ListaReclamos lis);
 
-/// Precondición: ClienteRegistrado() && validarFecha() && fecha >= fecha ultimo reclamo
-void AltaReclamo(ListaReclamos &lis, Reclamo e);
 /// Precondición: ReclamoExiste
 Reclamo ObtenerReclamo(ListaReclamos lis, int num);
+
+void resolverReclamo(ListaReclamos lis, int num);
+//-----------------------------------------------------------------------------------
+
 
 int TotalRecSolucionados(ListaReclamos lis);
 int TotalRecNOSolucionados(ListaReclamos lis);

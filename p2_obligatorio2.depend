@@ -2,10 +2,10 @@
 1574926865 source:/home/ansina/Desktop/p2_obligatorio2/main.cpp
 	<stdio.h>
 
-1575249667 source:/home/ansina/Desktop/Obligatorio2-P2-2019/Fecha.cpp
+1575320737 source:/home/ansina/Desktop/Obligatorio2-P2-2019/Fecha.cpp
 	"Fecha.h"
 
-1575249644 /home/ansina/Desktop/Obligatorio2-P2-2019/Fecha.h
+1575319346 /home/ansina/Desktop/Obligatorio2-P2-2019/Fecha.h
 	<stdio.h>
 
 1575251989 source:/home/ansina/Desktop/Obligatorio2-P2-2019/Cliente.cpp
@@ -23,24 +23,24 @@
 1575251821 /home/ansina/Desktop/Obligatorio2-P2-2019/AbbClientes.h
 	"Cliente.h"
 
-1575256405 source:/home/ansina/Desktop/Obligatorio2-P2-2019/main.cpp
+1575324381 source:/home/ansina/Desktop/Obligatorio2-P2-2019/main.cpp
 	"AbbClientes.h"
 	"ListaReclamos.h"
 
-1575247645 /home/ansina/Desktop/Obligatorio2-P2-2019/ListaReclamos.h
+1575324373 /home/ansina/Desktop/Obligatorio2-P2-2019/ListaReclamos.h
 	"Reclamo.h"
 
-1575255902 /home/ansina/Desktop/Obligatorio2-P2-2019/Reclamo.h
+1575324246 /home/ansina/Desktop/Obligatorio2-P2-2019/Reclamo.h
 	"string.h"
 	"Fecha.h"
 
-1575256488 source:/home/ansina/Desktop/Obligatorio2-P2-2019/string.cpp
+1575314629 source:/home/ansina/Desktop/Obligatorio2-P2-2019/string.cpp
 	"string.h"
 	<stdio_ext.h>
 
-1575248474 source:/home/ansina/Desktop/Obligatorio2-P2-2019/ListaReclamos.cpp
+1575324375 source:/home/ansina/Desktop/Obligatorio2-P2-2019/ListaReclamos.cpp
 	"ListaReclamos.h"
 
-1575256296 source:/home/ansina/Desktop/Obligatorio2-P2-2019/Reclamo.cpp
+1575324270 source:/home/ansina/Desktop/Obligatorio2-P2-2019/Reclamo.cpp
 	"Reclamo.h"
 

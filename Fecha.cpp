@@ -56,3 +56,20 @@ bool sonIguales(Fecha f1, Fecha f2){
         iguales = true;
     return iguales;
 }
+
+bool mayorOigual(Fecha f1, Fecha f2){
+    bool mayorOigual = false;
+
+    if(sonIguales(f1, f2)){
+        mayorOigual = true;
+    }else{
+        if(f1.anio != f2.anio)
+            mayorOigual = f1.anio > f2.anio;
+        else if(f1.mes != f2.mes)
+            mayorOigual = f1.mes > f2.mes;
+        else
+            mayorOigual = f1.dia > f2.dia;
+    }
+
+    return mayorOigual;
+}

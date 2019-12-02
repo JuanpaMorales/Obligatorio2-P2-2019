@@ -38,3 +38,4 @@ Fecha ObtenerFecha(Reclamo r){ return r.fec; }
 int ObtenerCI(Reclamo r){ return r.cedula; }
 string ObtenerDescri(Reclamo r){ return r.descri; }
 bool estaResuelto(Reclamo r){ return r.resuelto; }
+void setEstado(Reclamo &r, bool estado){ r.resuelto = estado; }

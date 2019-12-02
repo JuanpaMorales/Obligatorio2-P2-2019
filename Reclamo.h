@@ -19,6 +19,7 @@ Fecha ObtenerFecha(Reclamo r);
 int ObtenerCI(Reclamo r);
 string ObtenerDescri(Reclamo r);
 bool estaResuelto(Reclamo r);
+void setEstado(Reclamo &r, bool estado);
 
 
 #endif // RECLAMO_H_INCLUDED
