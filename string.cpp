@@ -1,9 +1,6 @@
 #include "string.h"
 
-/*
-*/
-#include <stdio_ext.h>
-int fflush(FILE * bufferAborrar){ __fpurge(bufferAborrar); return 0; }
+
 
 void strcrear(string & s) {
     s = new char[1];

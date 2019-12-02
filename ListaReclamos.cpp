@@ -49,4 +49,48 @@ void resolverReclamo(ListaReclamos lis, int num){
     setEstado(lis->info, true);
 }
 
+int TotalRecSolucionados(ListaReclamos lis){
+    if(lis==NULL)
+        return 0;
+    else if(estaResuelto(lis->info))
+        return 1 + TotalRecSolucionados(lis->sig);
+    else
+        return TotalRecSolucionados(lis->sig);
+}
+int TotalRecNOSolucionados(ListaReclamos lis){
+    if(lis==NULL)
+        return 0;
+    else if(!estaResuelto(lis->info))
+        return 1 + TotalRecNOSolucionados(lis->sig);
+    else
+        return TotalRecNOSolucionados(lis->sig);
+}
+
+int CantidadRecPorCI(ListaReclamos lis, int ci){
+    int cantidad = 0;
+    while(lis != NULL){
+        if(ObtenerCI(lis->info) == ci)
+            cantidad++;
+        lis = lis->sig;
+    }
+    return cantidad;
+}
+
+int ciMasReclamador(ListaReclamos lis){
+    int ciMax, cantidadMax=0, thisCI, thisCantidad;
+    ListaReclamos aux = lis;
+
+    while(aux != NULL){
+        thisCI = ObtenerCI(lis->info);
+        thisCantidad = CantidadRecPorCI(lis, thisCI);
+        if(cantidadMax < thisCantidad){
+            ciMax = thisCI;
+            cantidadMax = thisCantidad;
+        }
+        aux = aux->sig;
+    }
+
+    return ciMax;
+}
+
 

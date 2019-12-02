@@ -28,16 +28,16 @@ int ProximoNum(ListaReclamos lis);
 Reclamo ObtenerReclamo(ListaReclamos lis, int num);
 
 void resolverReclamo(ListaReclamos lis, int num);
-//-----------------------------------------------------------------------------------
-
 
 int TotalRecSolucionados(ListaReclamos lis);
 int TotalRecNOSolucionados(ListaReclamos lis);
-
-/// Precondición: !esVacia()
-int ciMasReclamador(ListaReclamos lis);
 /// Precondición: !esVacia()
 int CantidadRecPorCI(ListaReclamos lis, int ci);
+/// Precondición: !esVacia()
+int ciMasReclamador(ListaReclamos lis);
+
+//-----------------------------------------------------------------------------------
+
 /// Precondición: ambas fechas validas y desde <= hasta
 int ReclamosEnRango(ListaReclamos lis, Fecha desde, Fecha hasta);
 /// Precondición: ClienteRegistrado()

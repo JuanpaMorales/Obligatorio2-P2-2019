@@ -9,7 +9,7 @@ int main(){
     Crear(lis);
 
 
-    for(int i=0; i<2; i++){
+    for(int i=0; i<3; i++){
         Reclamo r;
         CargarReclamo(r, ProximoNum(lis));
         if( (esVacia(lis) || mayorOigual(ObtenerFecha(r), ObtenerFecha(Primero(lis))) ) && validarFecha(ObtenerFecha(r)) ){
@@ -20,12 +20,8 @@ int main(){
 
     }
 
-    if(ReclamoExiste(lis, 2)){
-        MostrarReclamo(ObtenerReclamo(lis, 2));
-        resolverReclamo(lis, 2);
-        MostrarReclamo(ObtenerReclamo(lis, 2));
-    }
-    else printf("\nNo existe el reclamo");
+    printf("\nCI mas reclamos: %i", ciMasReclamador(lis) );
+
 
 
 }
