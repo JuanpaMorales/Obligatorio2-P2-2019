@@ -28,6 +28,8 @@ Cliente Minimo(AbbClientes a);
 void Borrar_Minimo (AbbClientes &a);
 
 bool ClienteRegistrado(AbbClientes a, int ci);
+/// Precondición: ClienteRegistrado
+Cliente ObtenerCliente(AbbClientes a, int ci);
 
 /// Precondición: !ClienteRegistrado()
 void AltaCliente(AbbClientes &a, Cliente c);

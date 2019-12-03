@@ -25,6 +25,15 @@ bool ClienteRegistrado(AbbClientes a, int ci) {
         return ClienteRegistrado(a->hder, ci);
 }
 
+Cliente ObtenerCliente(AbbClientes a, int ci){
+    if ( ObtenerCI(a->info) == ci)
+        return a->info;
+    else if ( ci < ObtenerCI(a->info) )
+        return ObtenerCliente(a->hizq, ci);
+    else
+        return ObtenerCliente(a->hder, ci);
+}
+
 void AltaCliente(AbbClientes &a, Cliente c) {
     if (a == NULL) {
         a = new NodoCliente;
