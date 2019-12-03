@@ -2,6 +2,7 @@
 #define ABBCLIENTES_H_INCLUDED
 
 #include "Cliente.h"
+#include "ListaReclamos.h"
 
 typedef struct nodoA{
 		Cliente info;
@@ -27,18 +28,17 @@ Cliente Minimo(AbbClientes a);
 void Borrar_Minimo (AbbClientes &a);
 
 bool ClienteRegistrado(AbbClientes a, int ci);
+
 /// Precondición: !ClienteRegistrado()
 void AltaCliente(AbbClientes &a, Cliente c);
-
 /// Precondición: !EsVacio()
 void ListarClientes(AbbClientes a);
 /// Precondición: ClienteRegistrado()
 void BajaCliente(AbbClientes &a, int ci);
-
-//====================================================================
-
 /// Precondición: !EsVacio()
-int ClientesNoReclamos(AbbClientes a);
+int ClientesNoReclamos(AbbClientes a, ListaReclamos r);
+
+
 
 
 #endif // ABBCLIENTES_H_INCLUDED

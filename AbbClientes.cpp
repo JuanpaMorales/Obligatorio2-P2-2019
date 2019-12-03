@@ -90,4 +90,12 @@ void BajaCliente(AbbClientes &a, int ci) {
 }
 
 
+int ClientesNoReclamos(AbbClientes a, ListaReclamos r){
+    if (a == NULL)
+        return 0;
+    else
+        return CantidadRecPorCI(r, ObtenerCI(a->info) ) + ClientesNoReclamos(a->hizq, r) + ClientesNoReclamos(a->hder, r);
+}
+
+
 

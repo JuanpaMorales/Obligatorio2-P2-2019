@@ -1,6 +1,5 @@
 
 #include "AbbClientes.h"
-#include "ListaReclamos.h"
 
 
 int main(){
@@ -18,24 +17,19 @@ int main(){
         }
     }
 
+    ListaReclamos reclamos;
+    Crear(reclamos);
+    Reclamo recAux;
+
+    for(int i=0; i<3; i++){
+        CargarReclamo(recAux, ProximoNum(reclamos));
+        if(ClienteRegistrado(clientes, ObtenerCI(recAux))){
+            AltaReclamo(reclamos, recAux);
+        }else printf("\nCliente del reclamo no existe");
+    }
 
 
-    if(!EsVacio(clientes)){
-        ListarClientes(clientes);
-    }else printf("\nNo hay clientes cargados");
-
-
-    int ciAborrar;
-    printf("\nIngrese CI a borrar: ");
-    scanf("%i", &ciAborrar);
-
-    if(ClienteRegistrado(clientes, ciAborrar)){
-        BajaCliente(clientes, ciAborrar);
-    }else printf("\nEl Cliente a borrar no existe");
-
-    if(!EsVacio(clientes)){
-        ListarClientes(clientes);
-    }else printf("\nNo hay clientes cargados");
+    printf("\nClientes sin reclamos: %i", ClientesNoReclamos(clientes, reclamos) );
 
 
 }
