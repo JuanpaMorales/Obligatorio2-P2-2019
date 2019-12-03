@@ -123,3 +123,16 @@ void ListarReclamos_fecha(ListaReclamos lis, Fecha f){
     }
 }
 
+void BajaReclamos(ListaReclamos lis, int ci){
+    ListaReclamos aux;
+    while(lis!=NULL){
+        if(ObtenerCI(lis->info) == ci){
+            aux = lis;
+            lis = lis->sig;
+            delete aux;
+        }else{
+            lis = lis->sig;
+        }
+    }
+}
+

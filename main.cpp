@@ -45,8 +45,10 @@ int main(){
                     case 3:
                         printf("\nIngrese ci de cliente a borrar: ");
                         scanf("%i", &intAux);
-                        if(ClienteRegistrado(clientes, intAux))
+                        if(ClienteRegistrado(clientes, intAux)){
                             BajaCliente(clientes, intAux);
+                            BajaReclamos(reclamos, intAux);
+                        }
                         else printf("\nCliente no registrado");
                         break;
                 }

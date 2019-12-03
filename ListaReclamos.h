@@ -24,6 +24,8 @@ void AltaReclamo(ListaReclamos & lis, Reclamo e);
 bool ReclamoExiste(ListaReclamos lis, int num);
 int ProximoNum(ListaReclamos lis);
 
+void BajaReclamos(ListaReclamos lis, int ci);
+
 /// Precondición: ReclamoExiste
 Reclamo ObtenerReclamo(ListaReclamos lis, int num);
 
