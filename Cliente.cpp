@@ -6,17 +6,17 @@ void CargarCliente(Cliente &c){
     strcrear(c.nombre);
     scan(c.nombre);
 
-    printf("\nIngrese Apellido: ");
+    printf("Ingrese Apellido: ");
     strcrear(c.apellido);
     scan(c.apellido);
 
-    printf("\nIngrese CI: ");
+    printf("Ingrese CI: ");
     scanf("%i", &c.cedula);
 
-    printf("\nIngrese Tel.: ");
+    printf("Ingrese Tel.: ");
     scanf("%i", &c.telefono);
 
-    printf("\nIngrese Dirección: ");
+    printf("Ingrese Dirección: ");
     strcrear(c.direccion);
     fflush(stdin);
     scan(c.direccion);
@@ -26,12 +26,11 @@ void MostrarCliente(Cliente c){
     print(c.nombre);
     printf(" ");
     print(c.apellido);
-    printf(": ");
-    printf("\nCI: %i", c.cedula);
-    printf("\nTel.: %i", c.telefono);
-    printf("\nDir.: ");
+    printf(" | ");
+    printf("CI: %i", c.cedula);
+    printf(" | Tel.: %i", c.telefono);
+    printf(" | Dir.: ");
     print(c.direccion);
-    printf("\n");
 }
 int ObtenerCI(Cliente c){ return c.cedula; }
 string ObtenerNombre(Cliente c){ return c.nombre; }
