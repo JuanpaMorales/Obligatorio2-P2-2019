@@ -8,7 +8,7 @@ int main(){
     Crear(clientes);
 
     Cliente c;
-    for(int i=0; i<3; i++){
+    for(int i=0; i<1; i++){
         CargarCliente(c);
         if(!ClienteRegistrado(clientes, ObtenerCI(c))){
             AltaCliente(clientes, c);
@@ -17,19 +17,9 @@ int main(){
         }
     }
 
-    ListaReclamos reclamos;
-    Crear(reclamos);
-    Reclamo recAux;
-
-    for(int i=0; i<3; i++){
-        CargarReclamo(recAux, ProximoNum(reclamos));
-        if(ClienteRegistrado(clientes, ObtenerCI(recAux))){
-            AltaReclamo(reclamos, recAux);
-        }else printf("\nCliente del reclamo no existe");
+    if(!EsVacio(clientes)){
+        ListarClientes(clientes);
     }
-
-
-    printf("\nClientes sin reclamos: %i", ClientesNoReclamos(clientes, reclamos) );
 
 
 }
