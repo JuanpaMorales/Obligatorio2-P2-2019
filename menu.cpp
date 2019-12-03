@@ -15,7 +15,8 @@ void menuAltasBajas(int &opcionSubMenu){
     printf("\n1- Alta de cliente");
     printf("\n2- Alta de reclamo");
     printf("\n3- Baja de cliente");
-    printf("\n4- Volver atras");
+    printf("\n4- Solucionar reclamo");
+    printf("\n5- Volver atras");
     printf("\n");
 
     scanf("%i", &opcionSubMenu);

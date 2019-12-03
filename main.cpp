@@ -51,6 +51,12 @@ int main(){
                         }
                         else printf("\nCliente no registrado");
                         break;
+                    case 4:
+                        printf("\nIngrese numero de reclamo: ");
+                        scanf("%i", &intAux);
+                        if(ReclamoExiste(reclamos, intAux))
+                            resolverReclamo(reclamos, intAux);
+                        break;
                 }
 
                 break;

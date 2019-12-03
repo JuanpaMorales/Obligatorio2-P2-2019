@@ -28,7 +28,7 @@ void BajaReclamos(ListaReclamos lis, int ci);
 
 /// Precondición: ReclamoExiste
 Reclamo ObtenerReclamo(ListaReclamos lis, int num);
-
+/// Precondición: ReclamoExiste
 void resolverReclamo(ListaReclamos lis, int num);
 
 int TotalRecSolucionados(ListaReclamos lis);
